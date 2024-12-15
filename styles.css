@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Peach and pink gradient */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.app-container {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 700px; /* Increased width */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.app-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Transaction Form */
+.transaction-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.transaction-form input,
+.transaction-form textarea,
+.transaction-form button {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+}
+
+.transaction-form input,
+.transaction-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.transaction-form button {
+    background-color: #ff6347; /* Tomato */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.transaction-form button:hover {
+    background-color: #e53e3e; /* Darker tomato */
+}
+
+/* Transaction List */
+.transaction-list {
+    margin-top: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.transaction-item {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.transaction-item button {
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.transaction-item button:hover {
+    background-color: #e62e2e;
+}
+
+/* Summary Section */
+.summary {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.summary-item {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px; /* Adjusted padding for smaller height */
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px; /* Increased width */
+    text-align: center;
+}
+
+.summary-item p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 600px) {
+    .app-container {
+        padding: 20px;
+    }
+
+    .summary-item {
+        width: 100%;
+        max-width: none;
+    }
+}
